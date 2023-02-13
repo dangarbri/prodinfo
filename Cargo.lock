@@ -478,7 +478,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "product-lookup"
+name = "prodinfo"
 version = "0.1.0"
 dependencies = [
  "brocade",
