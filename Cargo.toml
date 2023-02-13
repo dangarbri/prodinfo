@@ -12,6 +12,6 @@ strip = true
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-brocade = {path = "../brocade-rs"}
+brocade = "0.1.0"
 serde = {version = "1.0.152"}
 serde_json = {version = "1.0.93"}
