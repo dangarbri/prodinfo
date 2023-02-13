@@ -7,7 +7,9 @@ fn main() {
     if barcode.is_some() {
         match brocade::instance().get(&barcode.unwrap()) {
             Ok(info) => print_response(info),
-            Err(_) => eprintln!("Failed to lookup barcode, check your internet connection")
+            Err(err) => {
+                eprintln!("{}", err);
+            }
         }
     }
 }
