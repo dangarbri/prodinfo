@@ -1,0 +1,17 @@
+[package]
+name = "product-lookup"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+opt-level = 3
+lto = true
+panic = 'abort'
+strip = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+brocade = {path = "../brocade-rs"}
+serde = {version = "1.0.152"}
+serde_json = {version = "1.0.93"}
